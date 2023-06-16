@@ -1,0 +1,99 @@
+body.light {
+    background: linear-gradient(90deg, #e8a188, white);
+    animation: gradient 10s infinite linear;
+    background-size: 200%;
+    color: #383838;
+    outline: 2px solid #383838;
+}
+
+body.light .left_content {
+    color: black;
+}
+
+body.light .left_content .mostpopular label {
+    color: rgb(255, 136, 0);
+    border-left: 3px solid black;
+}
+
+body.light .right_content {
+    color: white;
+    color: #313843;
+}
+
+body.light .mostpopular_games img {
+    box-shadow: 1px 1px 9px #ff0000;
+}
+
+body.light .mostpopular_games img:hover {
+    box-shadow: 1px 1px 20px #ff0000;
+}
+
+body.light .article_game p {
+    color: rgb(241, 11, 11);
+}
+
+body.light .article_game p:hover {
+    color: black;
+}
+
+body.light .right_content label {
+    color: rgb(255, 136, 0);
+    border-left: 3px solid rgb(0, 0, 0);
+}
+
+body.light .right_button {
+    border: 2px solid #ff0000;
+    background-color: #ffffff;
+    color: rgb(241, 11, 11);
+}
+
+body.light .right_button:hover {
+    color: black;
+}
+
+body.light .new label {
+    color: rgb(255, 136, 0);
+    border-left: 3px solid black;
+}
+
+body.light .new_games img {
+    box-shadow: 1px 1px 9px #ff0000;
+}
+
+body.light .new_games img:hover {
+    box-shadow: 1px 1px 20px #ff0000;
+}
+
+body.light .allgames {
+    border: 2px solid #ff0000;
+    background-color: #ffffff;
+    color: rgb(241, 11, 11);
+    box-shadow: 1px 1px 9px #ff652f;
+}
+
+body.light .allgames:hover {
+    color: black;
+    box-shadow: 1px 1px 20px #ff652f;
+}
+
+body.light .rating_score {
+    color: #ff652f;
+}
+
+body.light .game_h1 {
+    color: rgb(255, 136, 0);
+    border-left: 3px solid black;
+}
+
+body.light .right_container label {
+    color: rgb(255, 136, 0);
+    border-left: 3px solid black;
+}
+
+body.light .game_description h2 {
+    color: rgb(255, 136, 0);
+}
+
+body.light .trailer h2 {
+    color: rgb(255, 136, 0);
+}

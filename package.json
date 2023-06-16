@@ -1,0 +1,11 @@
+{
+    "name": "progect",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch": "parcel index.html --open --port 3000"
+    },
+    "author": "A Besk",
+    "license": "ISC"
+}

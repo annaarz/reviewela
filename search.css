@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, #000000, #434343);
+    animation: gradient 10s infinite linear;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    z-index: 10;
+    background-size: 400%;
+}
+
+.logo {
+    font-size: 30px;
+    background: linear-gradient(45deg, #ff652f, #ffe400, #14a76c);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: gradient 1s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400%;
+    width: 100%;
+}
+
+.logo img {
+    width: 250px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+
+.reg_log_container.opened {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.password_button:hover {
+    color: #ffe400;
+    transition: 0.5s;
+}
+
+.register_button:hover {
+    color: #14a76c;
+    transition: 0.5s;
+}
+
+header {
+    background-color: #272727;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 2px solid #ffe400;
+    border-top: #ff652f 2px solid;
+    border-left: 3px solid #14a76c;
+    border-right: 3px solid #14a76c;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1300px;
+}
+
+.header_buttons {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_buttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 9px;
+}
+
+.header_buttons .reg_log:hover {
+    transition: 1s;
+    color: #ff652f;
+}
+
+.header_buttons .search:hover {
+    transition: 1s;
+    color: #ffe400;
+}
+
+.header_buttons .credits:hover {
+    transition: 1s;
+    color: #14a76c;
+}
+
+footer {
+    color: white;
+    background-color: #272727;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    font-size: 20px;
+    border-top: 3px solid #ffe400;
+    border-bottom: #ff652f 3px solid;
+    border-left: 3px solid #14a76c;
+    border-right: 3px solid #14a76c;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    max-width: 1300px;
+}
+
+.email {
+    text-decoration: none;
+    color: #272727;
+    display: block;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: white;
+    padding: 6px;
+    border-radius: 15px;
+}
+
+.email:hover {
+    color: white;
+    background-image: linear-gradient(to right, #ff652f, #ffe400, #14a76c);
+    border: none;
+    padding: 8px;
+}
+
+main {
+    height: 100%;
+}
+
+.search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0 0 0;
+}
+
+.search_input {
+    border: none;
+    border-bottom: 2px solid white;
+    width: 50%;
+    font-size: 20px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: unset;
+    outline: none;
+    color: white;
+}
+
+.loupe {
+    width: 30px;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.search_items {
+    list-style-type: none;
+}
+
+.search_items a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.list {
+    margin: 10px 0 500px 355px;
+    display: flex;
+    flex-direction: column;
+}
