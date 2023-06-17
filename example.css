@@ -253,3 +253,121 @@ main {
     font-size: 23px;
     margin-top: 50px;
 }
+
+@media screen and (max-width:1441px) {
+    .burger_btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 2561px) {
+    .main_container {
+        width: 1600px;
+        margin: auto;
+    }
+    main {
+        height: 2500px;
+    }
+    .burger_btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1441px) {
+    .main_container {
+        width: 1400px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    body {
+        background-size: 500%;
+        width: 200px;
+    }
+    header {
+        width: 1024px;
+    }
+    footer {
+        width: 1024px;
+    }
+    .right_content {
+        display: none;
+    }
+    .header_buttons {
+        display: none;
+    }
+    .main_container {
+        display: block;
+        width: 1000px;
+    }
+    .left_content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mostpopular {
+        margin: auto;
+    }
+    .new {
+        margin: auto;
+    }
+    .logo {
+        padding-left: 30px;
+    }
+    .burger_btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-right: 30px;
+    }
+    .right_container {
+        display: none;
+    }
+}
+
+@media(max-width: 728px) {
+    .header_container,
+    .main_container,
+    .footer_container {
+        width: 40%;
+    }
+    .trailer iframe {
+        max-width: 200px;
+        max-height: 100px;
+    }
+    .about_game img {
+        max-height: 510px;
+        max-width: 400px;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media(max-width: 628px) {
+    .about_game img {
+        max-height: 450px;
+    }
+    .logo_container a img {
+        max-width: 183px;
+        max-height: 35px;
+    }
+    .header_container {
+        display: flex;
+        justify-content: space-between;
+        width: 627px;
+    }
+}
+
+@media(max-width: 548px) {
+    .about_game img {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .trailer iframe {
+        width: 110px;
+        height: 125px;
+    }
+}

@@ -3,7 +3,6 @@ body.light {
     animation: gradient 10s infinite linear;
     background-size: 200%;
     color: #383838;
-    outline: 2px solid #383838;
 }
 
 body.light .left_content {

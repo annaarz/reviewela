@@ -17,6 +17,15 @@ let login_button2 = document.querySelector('.login_button2')
 let password_button2 = document.querySelector('.password_button2')
 let password = document.querySelector('.password_input2')
 let submit = document.querySelector('.confirm')
+let reg_logBtnSide = document.querySelector('.reg_log_side')
+let backPannelSide = document.querySelector('.side_pannel_container')
+let burgerButtonSide = document.querySelector('.burger_btn')
+let body = document.querySelector('body')
+let light_btnSide = document.querySelector('.white_theme_btn_side')
+let categories = document.querySelector('.categories_side')
+let auxiliaryLinks = document.querySelector('.auxiliary_links')
+let categoriesSideClose = document.querySelector('.categories_side_close')
+
 
 function checkPassword() {
     if (password.value == submit.value) {
@@ -28,7 +37,15 @@ function checkPassword() {
 password.addEventListener('keyup', checkPassword)
 submit.addEventListener('keyup', checkPassword)
 
+reg_logBtnSide.addEventListener('click', (e) => {
+    if (!registerContainer.classList.contains('opened') && !forgot_passwordContainer.classList.contains('opened')) {
+        reg_logContainer.classList.add('opened')
 
+    }
+    backPannelSide.style.width = '0'
+    burgerButtonSide.style.display = 'block'
+
+})
 
 
 reg_logBtn.addEventListener('click', (e) => {
@@ -90,11 +107,6 @@ password_button2.addEventListener('click', () => {
     registerContainer.classList.remove('opened')
 
 })
-
-
-
-
-let body = document.querySelector('body')
 let light_btn = document.querySelector('.white_theme_btn')
 
 
@@ -105,4 +117,28 @@ light_btn.addEventListener('click', () => {
     } else {
         light_btn.innerHTML = 'Тёмная Тема'
     }
+})
+
+light_btnSide.addEventListener('click', () => {
+    body.classList.toggle('light');
+    if (light_btnSide.innerHTML == 'Тёмная Тема') {
+        light_btnSide.innerHTML = 'Светлая Тема'
+    } else {
+        light_btnSide.innerHTML = 'Тёмная Тема'
+    }
+    backPannelSide.style.width = '0'
+    burgerButtonSide.style.display = 'block'
+})
+
+
+categories.addEventListener('click', () => {
+    auxiliaryLinks.style.display = 'flex'
+    categories.style.display = 'none'
+    categoriesSideClose.style.display = 'block'
+})
+
+categoriesSideClose.addEventListener('click', () => {
+    auxiliaryLinks.style.display = 'none'
+    categories.style.display = 'block'
+    categoriesSideClose.style.display = 'none'
 })

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="style.css">
+    <title>О проекте </title>
+</head>
+
+<body>
+    <div class="reg_log_container">
+        <div class="reg_log_box">
+            <button class="close_btn">x</button>
+            <h2>Логин</h2>
+            <input type="email" placeholder="Логин">
+            <div>
+                <input type="password" placeholder="Пароль" class="password_input" maxlength="40">
+                <img src="img/open_eye.png" class="opened_eye">
+                <img src="img/closed_eye.png" class="closed_eye">
+            </div>
+            <button class="login">Войти</button>
+            <div class="reg_log_buttons">
+                <a href="#" class="password_button">Забыли пароль?</a>
+                <a href="#" class="register_button">Регестрация</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="forgot_password_container">
+        <div class="forgot_password_box">
+            <button class="close_btn_2">x</button>
+            <h2>Введите почту на которую зарегистрирован аккаунт</h2>
+            <input type="email" placeholder="Почта">
+            <button class="login">Восстановить пароль</button>
+            <div class="reg_log_buttons">
+                <a href="#" class="login_button">Логин</a>
+                <a href="#" class="register_button2">Регестрация</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="register_container">
+        <div class="register_box">
+            <button class="close_btn_3">x</button>
+            <h2>Регистрация</h2>
+            <input type="email" placeholder="Почта">
+            <input type="password" placeholder="Пароль" class="password_input2">
+            <input type="password" placeholder="Подтвердите пароль" class="confirm">
+            <span id="log"></span>
+            <button class="register">Зарегистроваться</button>
+            <div class="reg_log_buttons">
+                <a href="#" class="login_button2">Логин</a>
+                <a href="#" class="password_button2">Забили пароль?</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header_container">
+            <div class="logo_container">
+                <a href="index.html" class="logo"><img src="img/logo.png"></a>
+            </div>
+
+            <div class="header_buttons">
+                <a href="#" class="reg_log">Регистрация/Логин</a>
+                <a href="search.html" class="search">Поиск</a>
+                <a href="#" class="credits">О проекте</a>
+                <a href="#" class="white_theme_btn">Светлая тема</a>
+            </div>
+            <img src="img/burger.png" class="burger_btn">
+        </div>
+    </header>
+    <main>
+        <p>Проект представлен Артёмом Бескоровайным и Егором Кацем.</p>
+        <p>Основная идея проекта узнать информацию о предстоящих или существующих играх.</p>
+        <p>В дальнейшем в проект предстоить добавить систему оценок и оценивания. А также оптимизировать и улучшить существующий код</p>
+        <p>Почта для обратной связи - besk-zed@mail.ru</p>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <p>Copyright © Fandango. All rights reserved.</p>
+            <div class="contacts">
+                <p>Свяжитесь с нами:</p>
+                <a href="#" class="email">Написать на почту</a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="burger.js"></script>
+</body>
+
+</html>
